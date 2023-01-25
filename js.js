@@ -1,5 +1,5 @@
 let pizza = prompt("Ingrese el nombre de la pizza deseada");
-let valor = 0;
+let suma = 0;
 
 while (pizza !== "salir") {
   switch (pizza) {
@@ -17,10 +17,11 @@ while (pizza !== "salir") {
     case "pepperoni":
       valor = 2000;
       break;
+      let sumaPedido = suma + valor;
   }
   console.log("El costo de la pizza seleccionada es: " + valor);
   pizza = prompt(
     "Ingrese el nombre de la pizza deseada (ingrese la palabra salir si no desea otra pizza)"
   );
 }
-alert("Gracias por tu pedido");
+alert("El total de su pedido es. $" + sumaPedido + "Gracias por tu pedido");
