@@ -1,4 +1,8 @@
-let pizza = prompt("Ingrese el nombre de la pizza deseada");
+/Calcular costo de productos seleccionados por el cliente/;
+
+let pizza = prompt(
+  "Seleccione la pizza que desea (escriba SALIR si no quiere realizar el pedido)"
+);
 let suma = 0;
 
 while (pizza !== "salir") {
@@ -17,11 +21,15 @@ while (pizza !== "salir") {
     case "pepperoni":
       valor = 2000;
       break;
-      let sumaPedido = suma + valor;
   }
-  console.log("El costo de la pizza seleccionada es: " + valor);
+  suma = suma + valor;
+
+  console.log("El costo de la pizza seleccionada es: $" + valor);
   pizza = prompt(
-    "Ingrese el nombre de la pizza deseada (ingrese la palabra salir si no desea otra pizza)"
+    "Seleccione otra pizza (Ingrese la palabra salir si no desea otra pizza"
   );
 }
-alert("El total de su pedido es. $" + sumaPedido + "Gracias por tu pedido");
+console.log("total del pedido: $" + suma);
+alert(
+  "El total de su pedido es: $" + suma + " ¡Gracias por elegir nuestras pizzas!"
+);
